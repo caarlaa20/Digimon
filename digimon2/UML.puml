@@ -1,0 +1,40 @@
+@startuml
+class BatallaDigital {
+- Digimon enemigo
++ Digimon getEnemigo()
+}
+
+
+class Main {
++ {static} void main(String[])
+}
+
+class Domador {
+- String nombre
+- Digimon[] equipo
+~ void captura(Digimon)
++ String getNombre()
++ Digimon[] getEquipo()
+}
+
+
+class Digimon {
+- String nombre
+- int nivel
+- int puntosAtaque
+- int salud
+- int dp1
+- int dp2
+~ void ataque1()
+~ void ataque2()
++ String getNombre()
++ int getNivel()
++ int getPuntosAtaque()
++ int getSalud()
++ void setSalud(int)
++ int getDp1()
++ int getDp2()
+}
+
+
+@enduml
